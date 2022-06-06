@@ -1,0 +1,129 @@
+/*
+*{
+    border: solid;
+}
+*/
+nav {
+    float: right;
+    text-align: center;
+    display: GRID;
+    grid-template-columns: 60px 60px 60px ;
+    background-color: white;
+}
+
+main{
+    
+    display: GRID;
+    grid-template-columns:auto auto auto auto  ;
+    column-gap: 10px;
+    clear: both; 
+}
+
+p {
+    text-align: center;
+    
+}
+
+button.dropButton{
+    min-width: 100%;
+    min-height: 100%;
+    cursor: pointer;
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border-radius: 10px;
+    border-width: 0px;
+   
+    /*up on hover*/
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s;
+}
+
+button.dropButton:hover{
+    background-color: #2980B9;
+    /*up on hover*/
+    top: -10px;
+}
+
+div.dropdownContent {
+    position: absolute;
+    background-color: #f1f1f1;
+    display: none;
+    border-radius: 10px;
+    z-index: 1;
+    
+}
+
+div.dropdownContent a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 10px;
+    /*scale on hover*/
+    transition: all .2s ease-in-out;
+    
+}
+
+div.dropdownContent a:hover{
+    background-color: #ddd;
+    /*scale on hover*/
+    transform:scale(1.1);
+}
+
+div.topImage, div.bottomImage{
+    height: 100px;
+    background-image: linear-gradient(to bottom right, white, yellow,#3498DB);
+}
+
+footer{
+    position:absolute;
+    bottom:0;
+    left: 0;
+    width:100%;
+    height:100px; 
+}
+
+/*Login*/
+div.logInBox{
+    margin:auto;
+    margin-top: 40px;
+    position: relative;
+    text-align: center;
+    top: 50%;
+    width: 20%; 
+    background-color: lightgray;
+    padding: 20px ; 
+    padding-bottom: 40px;
+    font-size: 25px; 
+    border-radius: 20px;
+}
+
+div.logInBox input{
+    position: relative;
+    display:block;
+    left: 0;
+    width: 100%;
+    margin: 20px;
+    margin-left: -4px;
+    font-size: 20px; 
+    text-align: center;
+}
+
+button.logButton{
+    background-color: #3498DB; 
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 36px;
+}
+
+a.registerLink{
+    padding-top: 40px;
+    font-size: 20px;
+    
+}
+/*-----------------------------------*/
